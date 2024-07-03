@@ -24,8 +24,8 @@ F03 | Dodavanje recepata u favorite | Korisnici će moći dodati odabrane recept
 
 Za razvoj naše mobilne aplikacije s elementima igre koristit ćemo sljedeće tehnologije, alate i opremu:
 
-Programski jezik: Kotlin
-Razvojno okruženje: Android Studio
-Verzioniranje koda: Git i GitHub
-Dokumentacija: GitHub Wiki
-Upravljanje projektom: GitHub Projects i Jira Software
+1. Programski jezik: Kotlin
+2. Razvojno okruženje: Android Studio
+3. Verzioniranje koda: Git i GitHub
+4. Dokumentacija: GitHub Wiki
+5. Upravljanje projektom: GitHub Projects i Jira Software
