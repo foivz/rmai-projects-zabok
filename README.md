@@ -24,12 +24,14 @@ Tia Kobasić Čonč | tkobasicc21@student.foi.hr | ... | Tkobasicc
 Kroz ovaj projekt kreirat će se mobilna aplikacija pod nazivom Kuharica koja će sadržavati nekoliko kategorija s različitim receptima.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti. Također uzmite u obzir da je u ovom trenutku dovoljno opisati 3 funkcionalnosti, dok će sve funkcionalnoisti biti pobrojane u sklopu rada na projektu i specifikacija zahtjeva. Funkcionalnosti sustava pobrojite u tablici ispod koristeći predložak koji slijedi:
+Ova specifikacija opisuje osnovne funkcionalnosti aplikacije za pregled i upravljanje receptima. Aplikacija omogućava korisnicima pristup raznim receptima, njihovo pregledavanje prema kategorijama te dodavanje omiljenih recepata na listu favorita. Za pristup aplikaciji potrebna je prijava korisnika (korisnik unosi korisničko ime i lozinku, nakon uspješne autentifikacije, korisnik dobiva pristup aplikaciji), nakon čega korisnik može pregledavati recepte prema kategorijama (recepti su organizirani u kategorije (npr. predjela, glavna jela, deserti), svaki recept sadrži detalje poput sastojaka, uputa za pripremu i vremena kuhanja). Korisnici recepte također mogu dodavati u omiljene recepte, odnosno favorite (saki recept ima opciju "Dodaj u favorite", omiljeni recepti se pohranjuju na korisnički račun, korisnici mogu pregledavati i upravljati svojim omiljenim receptima).
+U slučaju neuspješne prijave, korisnik dobiva odgovarajuću poruku o grešci.
 
 Oznaka | Naziv | Kratki opis 
 ------ | ----- | ----------- 
-F01 | Login | Za pristup dnevniku potrebna je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... 
-F02 | Pregled dnevnika | .... 
+F01 | Login | Za pristup dnevniku potrebna je autentikacija korisnika pomoću login funkcionalnosti. 
+F02 | Pregled recepata | Korisnici će nakon prijave u aplikaciju moći pregledavati recepte prema odabranim kategorijama.
+F03 | Dodavanje recepata u favorite | Korisnici će moći dodati odabrane recepte na listu svojih omiljenih recepata.
 
 ## Tehnologije i oprema
 Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Projekti se razvijaju koristeći Android razvojne okvire, a vrsta projekta može biti mobilna aplikacija ili mobilna aplikacija s elementima igara. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neophodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu. Što se tiče zahtjeva nastavnika, obvezno je koristiti git i GitHub za verzioniranje programskog koda, GitHub Wiki za pisanje tehničke i projektne dokumentacije, a projektne zadatke je potrebno planirati i pratiti u alatu GitHub projects. 
