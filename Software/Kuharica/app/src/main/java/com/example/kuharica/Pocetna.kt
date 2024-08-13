@@ -31,7 +31,7 @@ class Pocetna : AppCompatActivity() {
         mainPagerAdapter.addFragment(
             MainPagerAdapter.FragmentItem(
                 R.string.new_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
-                R.drawable.baseline_post_add_24
+                R.drawable.baseline_post_add_24,
                 NewFragment::class // Zamijenite s pravim fragmentom
             )
         )
@@ -59,10 +59,11 @@ class Pocetna : AppCompatActivity() {
             tab.setIcon(mainPagerAdapter.fragmentItems[position].iconRes)
         }.attach()
 
-    }
-    val poslaniTekst = intent.getStringExtra("poslani_tekst")
+        val poslaniTekst = intent.getStringExtra("poslani_tekst")
         val tvPozdrav = findViewById<TextView>(R.id.tvPozdrav)
         tvPozdrav.text = "Bok, $poslaniTekst!"
+    }
+
 
     }
 

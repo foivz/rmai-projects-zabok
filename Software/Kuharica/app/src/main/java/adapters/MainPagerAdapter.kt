@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import kotlin.reflect.KClass
 
 class MainPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
     : FragmentStateAdapter(fragmentManager, lifecycle) {
@@ -23,8 +24,8 @@ class MainPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
     }
 
     companion object {
-        fun FragmentItem(titleRes: Int, iconRes: Int): MainPagerAdapter.FragmentItem {
-
+        fun createFragmentItem(titleRes: Int, iconRes: Int, fragmentClass: KClass<out Fragment>): FragmentItem {
+            return FragmentItem(titleRes, iconRes, fragmentClass)
         }
     }
 
