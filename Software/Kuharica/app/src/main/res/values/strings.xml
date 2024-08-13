@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kuharica</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_fragment">Novi recept</string>
+    <string name="base_fragment">Moji recepti</string>
+    <string name="week_fragment">Tjedni plan</string>
 </resources>
