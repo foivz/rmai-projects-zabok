@@ -4,4 +4,6 @@
     <string name="new_fragment">Novi recept</string>
     <string name="base_fragment">Moji recepti</string>
     <string name="week_fragment">Tjedni plan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
