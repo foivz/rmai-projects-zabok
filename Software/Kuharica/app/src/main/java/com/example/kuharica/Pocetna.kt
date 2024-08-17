@@ -13,6 +13,7 @@ import com.example.kuharica.fragments.WeekFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.example.kuharica.fragments.NewFragment
+import com.example.kuharica.fragments.NewRecipeFragment
 
 class Pocetna : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class Pocetna : AppCompatActivity() {
             MainPagerAdapter.FragmentItem(
                 R.string.new_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
                 R.drawable.baseline_post_add_24,
-                NewFragment::class // Zamijenite s pravim fragmentom
+                NewRecipeFragment::class // Zamijenite s pravim fragmentom
             )
         )
         mainPagerAdapter.addFragment(
