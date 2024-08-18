@@ -1,6 +1,8 @@
 package com.example.kuharica.fragments
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,6 +52,20 @@ class NewRecipeFragment : Fragment() {
             lifecycleScope.launch(Dispatchers.IO) {
                 RecipeDatabase.getInstance(requireContext()).recipeDao().insertRecipe(recipe)
             }
+            btnSave.text = "Spremljeno"
+
+            // Osvježi stranicu nakon 5 sekundi
+            Handler(Looper.getMainLooper()).postDelayed({
+                resetForm()
+            }, 5000)
         }
+    }
+    private fun resetForm() {
+        etRecipeName.text.clear()
+        etIngredients.text.clear()
+        etDescription.text.clear()
+
+        // Vratite tekst gumba na "Spremi"
+        btnSave.text = "Spremi"
     }
 }

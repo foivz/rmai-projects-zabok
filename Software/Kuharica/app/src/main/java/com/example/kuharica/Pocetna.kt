@@ -33,21 +33,21 @@ class Pocetna : AppCompatActivity() {
             MainPagerAdapter.FragmentItem(
                 R.string.new_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
                 R.drawable.baseline_post_add_24,
-                NewRecipeFragment::class // Zamijenite s pravim fragmentom
+                NewRecipeFragment::class.java // Zamijenite s pravim fragmentom
             )
         )
         mainPagerAdapter.addFragment(
             MainPagerAdapter.FragmentItem(
                 R.string.base_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
                 R.drawable.baseline_storage_24,
-                BaseFragment::class // Zamijenite s pravim fragmentom
+                BaseFragment::class.java // Zamijenite s pravim fragmentom
             )
         )
         mainPagerAdapter.addFragment(
             MainPagerAdapter.FragmentItem(
                 R.string.week_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
                 R.drawable.baseline_calendar_today_24,
-                WeekFragment::class // Zamijenite s pravim fragmentom
+                WeekFragment::class.java // Zamijenite s pravim fragmentom
             )
         )
 
