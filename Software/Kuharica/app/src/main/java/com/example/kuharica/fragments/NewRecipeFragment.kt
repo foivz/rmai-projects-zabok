@@ -15,6 +15,7 @@ import com.example.kuharica.data.Recipe
 import com.example.kuharica.data.RecipeDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class NewRecipeFragment : Fragment() {
 
@@ -50,16 +51,22 @@ class NewRecipeFragment : Fragment() {
             val recipe = Recipe(0, recipeName, ingredients, description)
 
             lifecycleScope.launch(Dispatchers.IO) {
+                // Spremi recept u bazu podataka
                 RecipeDatabase.getInstance(requireContext()).recipeDao().insertRecipe(recipe)
-            }
-            btnSave.text = "Spremljeno"
 
-            // Osvježi stranicu nakon 5 sekundi
-            Handler(Looper.getMainLooper()).postDelayed({
-                resetForm()
-            }, 5000)
+                withContext(Dispatchers.Main) {
+                    // Ažuriraj UI nakon što je recept spremljen
+                    btnSave.text = "Spremljeno"
+
+                    // Osvježi stranicu nakon 5 sekundi
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        resetForm()
+                    }, 2000)
+                }
+            }
         }
     }
+
     private fun resetForm() {
         etRecipeName.text.clear()
         etIngredients.text.clear()

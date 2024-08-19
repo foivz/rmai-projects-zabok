@@ -1,12 +1,15 @@
 package com.example.kuharica.fragments
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kuharica.R
@@ -29,6 +32,13 @@ class BaseFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_base, container, false)
         recyclerView = view.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+        val dividerDrawable: Drawable? = ContextCompat.getDrawable(requireContext(), R.drawable.divider_custom)
+        val dividerItemDecoration = DividerItemDecoration(recyclerView.context, (recyclerView.layoutManager as LinearLayoutManager).orientation)
+        dividerDrawable?.let {
+            dividerItemDecoration.setDrawable(it)
+        }
+        recyclerView.addItemDecoration(dividerItemDecoration)
 
         loadRecipes()
 
@@ -66,10 +76,17 @@ class BaseFragment : Fragment() {
         bundle.putParcelable("recipe", recipe)
         fragment.arguments = bundle
 
-        parentFragmentManager.beginTransaction()
+        fragment.show(parentFragmentManager, "RecipeDetailDialog")
+        /*parentFragmentManager.beginTransaction()
+            .setCustomAnimations(
+                android.R.anim.fade_in, // Prikaz fragmenata s animacijom
+                android.R.anim.fade_out, // Nestajanje fragmenata s animacijom
+                android.R.anim.fade_in, // Vraćanje na stari fragment s animacijom
+                android.R.anim.fade_out // Nestajanje fragmenata s animacijom
+            )
             .replace(R.id.fragment_container, fragment) // Promijenite na pravi ID vašeg container-a
             .addToBackStack(null)
-            .commit()
+            .commit()*/
     }
 
     private fun editRecipe(recipe: Recipe) {
@@ -78,10 +95,17 @@ class BaseFragment : Fragment() {
         bundle.putParcelable("recipe", recipe)
         fragment.arguments = bundle
 
-        parentFragmentManager.beginTransaction()
+        fragment.setOnRecipeUpdatedListener(object : EditRecipeFragment.OnRecipeUpdatedListener {
+            override fun onRecipeUpdated() {
+                loadRecipes() // Ponovno učitaj recepte nakon što su izmjene spremljene
+            }
+        })
+
+        fragment.show(parentFragmentManager, "EditRecipeDialog")
+        /*parentFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .addToBackStack(null)
-            .commit()
+            .commit()*/
     }
 
     /* private fun editRecipe(recipe: Recipe) {

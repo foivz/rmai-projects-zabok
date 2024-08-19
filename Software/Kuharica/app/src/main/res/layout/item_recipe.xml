@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="end">>
 
     <TextView
         android:id="@+id/tvRecipeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="Naziv recepta"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -18,26 +20,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Edit"
-        android:src="@drawable/baseline_article_24" />
+        android:src="@drawable/baseline_article_24"
+        android:layout_toStartOf="@id/tvRecipeName"
+        android:layout_marginEnd="8dp"  />
 
     <ImageButton
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:contentDescription="Delete"
         android:src="@drawable/outline_auto_delete_24" />
-   <!-- <TextView
-        android:id="@+id/tvIngredients"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sastojci"
-        android:textSize="16sp" />
+    <!-- <TextView
+         android:id="@+id/tvIngredients"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Sastojci"
+         android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Opis"
-        android:textSize="14sp" />-->
+     <TextView
+         android:id="@+id/tvDescription"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Opis"
+         android:textSize="14sp" />-->
 
 </LinearLayout>

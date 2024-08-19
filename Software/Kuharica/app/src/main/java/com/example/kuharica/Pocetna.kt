@@ -1,6 +1,13 @@
 package com.example.kuharica
 
+import android.content.Context
+import android.content.Intent
+import android.graphics.Rect
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.inputmethod.InputMethodManager // Dodajte ovaj import
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +19,6 @@ import com.example.kuharica.fragments.BaseFragment
 import com.example.kuharica.fragments.WeekFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.example.kuharica.fragments.NewFragment
 import com.example.kuharica.fragments.NewRecipeFragment
 
 class Pocetna : AppCompatActivity() {
@@ -25,31 +31,11 @@ class Pocetna : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-            val viewPager2 = findViewById<ViewPager2>(R.id.viewPager2)
-            val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
+
+        val viewPager2 = findViewById<ViewPager2>(R.id.viewPager2)
+        val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val mainPagerAdapter = MainPagerAdapter(supportFragmentManager, lifecycle)
 
-        mainPagerAdapter.addFragment(
-            MainPagerAdapter.FragmentItem(
-                R.string.new_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
-                R.drawable.baseline_post_add_24,
-                NewRecipeFragment::class.java // Zamijenite s pravim fragmentom
-            )
-        )
-        mainPagerAdapter.addFragment(
-            MainPagerAdapter.FragmentItem(
-                R.string.base_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
-                R.drawable.baseline_storage_24,
-                BaseFragment::class.java // Zamijenite s pravim fragmentom
-            )
-        )
-        mainPagerAdapter.addFragment(
-            MainPagerAdapter.FragmentItem(
-                R.string.week_fragment, // Promijenite u odgovarajuće resurse za vaš fragment
-                R.drawable.baseline_calendar_today_24,
-                WeekFragment::class.java // Zamijenite s pravim fragmentom
-            )
-        )
 
         // Povezivanje adaptera s ViewPager2
         viewPager2.adapter = mainPagerAdapter
@@ -63,10 +49,33 @@ class Pocetna : AppCompatActivity() {
         val poslaniTekst = intent.getStringExtra("poslani_tekst")
         val tvPozdrav = findViewById<TextView>(R.id.tvPozdrav)
         tvPozdrav.text = "Bok, $poslaniTekst!"
+
+        val btnLogout = findViewById<Button>(R.id.btnLogout)
+        btnLogout.setOnClickListener {
+            // Vraćanje na MainActivity
+            val intent = Intent(this@Pocetna, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            finish()
+        }
     }
 
-
+    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
+        if (event.action == MotionEvent.ACTION_DOWN) {
+            val v = currentFocus
+            if (v is EditText) {
+                val outRect = Rect()
+                v.getGlobalVisibleRect(outRect)
+                if (!outRect.contains(event.rawX.toInt(), event.rawY.toInt())) {
+                    v.clearFocus()
+                    val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                    imm.hideSoftInputFromWindow(v.windowToken, 0)
+                }
+            }
+        }
+        return super.dispatchTouchEvent(event)
     }
+}
 
 
 

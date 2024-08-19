@@ -19,11 +19,11 @@
 
     <EditText
         android:id="@+id/etIngredients"
-        android:layout_width="414dp"
-        android:layout_height="195dp"
+        android:layout_width="323dp"
+        android:layout_height="187dp"
+        android:gravity="top|start"
         android:hint="Sastojci"
         android:inputType="textMultiLine"
-        android:gravity="top|start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="spread"
         app:layout_constraintStart_toStartOf="parent"
