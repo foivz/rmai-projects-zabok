@@ -1,6 +1,12 @@
 package com.example.kuharica.fragments
 
+import android.graphics.Typeface
 import android.os.Bundle
+import android.text.Editable
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
+import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,11 +48,11 @@ class EditRecipeFragment : DialogFragment() {
         btnSaveChanges = view.findViewById(R.id.btnSaveChanges)
 
         // Preuzmi podatke iz bundle-a
-        recipe = arguments?.getParcelable<Recipe>("recipe")
+        recipe = arguments?.getParcelable("recipe")
         recipe?.let {
-            etRecipeName.setText(it.name)
-            etIngredients.setText(it.ingredients)
-            etDescription.setText(it.description)
+            etRecipeName.setText(formatText("Naziv recepta:\n\n",it.name))
+            etIngredients.setText(formatText("Sastojci:\n\n", it.ingredients))
+            etDescription.setText(formatText("Opis postupka:\n\n", it.description))
         }
 
         btnSaveChanges.setOnClickListener {
@@ -62,10 +68,27 @@ class EditRecipeFragment : DialogFragment() {
         dialog?.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
     }
 
+    private fun formatText(title: String, content: String): Editable {
+        val fullText = "$title\n$content"
+        val spannableStringBuilder = SpannableStringBuilder(fullText)
+        val titleStart = fullText.indexOf(title)
+        val titleEnd = titleStart + title.length
+
+        // Primijeni boldanje na naslov
+        spannableStringBuilder.setSpan(
+            StyleSpan(Typeface.BOLD),
+            titleStart,
+            titleEnd,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        return spannableStringBuilder
+    }
+
     private fun saveChanges() {
         val newRecipeName = etRecipeName.text.toString()
-        val newIngredients = etIngredients.text.toString()
-        val newDescription = etDescription.text.toString()
+        val newIngredients = extractContent(etIngredients.text.toString())
+        val newDescription = extractContent(etDescription.text.toString())
 
         if (newRecipeName.isNotEmpty() && newIngredients.isNotEmpty() && newDescription.isNotEmpty()) {
             recipe?.let {
@@ -89,10 +112,21 @@ class EditRecipeFragment : DialogFragment() {
         }
     }
 
+    private fun extractContent(text: String): String {
+        val indexOfNewLine = text.indexOf('\n')
+        return if (indexOfNewLine != -1) {
+            text.substring(indexOfNewLine + 1)
+        } else {
+            text
+        }
+    }
+
     fun setOnRecipeUpdatedListener(listener: OnRecipeUpdatedListener) {
         onRecipeUpdatedListener = listener
     }
 }
+
+
 
 
 /*package com.example.kuharica.fragments
