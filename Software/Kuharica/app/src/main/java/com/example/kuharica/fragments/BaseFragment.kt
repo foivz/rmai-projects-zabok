@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -24,6 +25,8 @@ class BaseFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var recipeAdapter: RecipeAdapter
+    private lateinit var searchView: SearchView
+    private var allRecipes: List<Recipe> = listOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +34,8 @@ class BaseFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_base, container, false)
         recyclerView = view.findViewById(R.id.recyclerView)
+        searchView = view.findViewById(R.id.searchView)
+
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         val dividerDrawable: Drawable? = ContextCompat.getDrawable(requireContext(), R.drawable.divider_custom)
@@ -42,14 +47,38 @@ class BaseFragment : Fragment() {
 
         loadRecipes()
 
+        setupSearchView()
+
         return view
+    }
+
+    private fun setupSearchView() {
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filterRecipes(newText)
+                return true
+            }
+        })
+    }
+
+    private fun filterRecipes(query: String?) {
+        val filteredRecipes = if (!query.isNullOrEmpty()) {
+            allRecipes.filter { it.name.contains(query, ignoreCase = true) }
+        } else {
+            allRecipes
+        }
+        recipeAdapter.updateData(filteredRecipes)
     }
 
     private fun deleteRecipe(recipe: Recipe) {
         lifecycleScope.launch(Dispatchers.IO) {
             RecipeDatabase.getInstance(requireContext()).recipeDao().deleteRecipe(recipe)
             withContext(Dispatchers.Main) {
-                loadRecipes() // Ponovno učitajte popis recepata nakon brisanja
+                loadRecipes()
                 Toast.makeText(requireContext(), "${recipe.name} obrisan!", Toast.LENGTH_SHORT).show()
             }
         }
@@ -57,10 +86,10 @@ class BaseFragment : Fragment() {
 
     private fun loadRecipes() {
         lifecycleScope.launch(Dispatchers.IO) {
-            val recipes = RecipeDatabase.getInstance(requireContext()).recipeDao().getAllRecipes()
+            allRecipes = RecipeDatabase.getInstance(requireContext()).recipeDao().getAllRecipes()
             withContext(Dispatchers.Main) {
                 recipeAdapter = RecipeAdapter(
-                    recipes,
+                    allRecipes,
                     onEditClick = { recipe -> editRecipe(recipe) },
                     onDeleteClick = { recipe -> deleteRecipe(recipe) },
                     onItemClick = { recipe -> showRecipeDetails(recipe) }
@@ -77,16 +106,6 @@ class BaseFragment : Fragment() {
         fragment.arguments = bundle
 
         fragment.show(parentFragmentManager, "RecipeDetailDialog")
-        /*parentFragmentManager.beginTransaction()
-            .setCustomAnimations(
-                android.R.anim.fade_in, // Prikaz fragmenata s animacijom
-                android.R.anim.fade_out, // Nestajanje fragmenata s animacijom
-                android.R.anim.fade_in, // Vraćanje na stari fragment s animacijom
-                android.R.anim.fade_out // Nestajanje fragmenata s animacijom
-            )
-            .replace(R.id.fragment_container, fragment) // Promijenite na pravi ID vašeg container-a
-            .addToBackStack(null)
-            .commit()*/
     }
 
     private fun editRecipe(recipe: Recipe) {
@@ -97,75 +116,12 @@ class BaseFragment : Fragment() {
 
         fragment.setOnRecipeUpdatedListener(object : EditRecipeFragment.OnRecipeUpdatedListener {
             override fun onRecipeUpdated() {
-                loadRecipes() // Ponovno učitaj recepte nakon što su izmjene spremljene
+                loadRecipes()
             }
         })
 
         fragment.show(parentFragmentManager, "EditRecipeDialog")
-        /*parentFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .addToBackStack(null)
-            .commit()*/
     }
-
-    /* private fun editRecipe(recipe: Recipe) {
-         // Ovdje pokrenite aktivnost ili fragment za uređivanje recepta
-         Toast.makeText(requireContext(), "Editiranje: ${recipe.name}", Toast.LENGTH_SHORT).show()
-         // Možete koristiti Bundle za prijenos podataka o receptu u novi fragment za uređivanje
-     }*/
-
-
-
-   /* private fun showRecipeDetails(recipe: Recipe) {
-        // Ovdje otvorite novi prozor ili fragment koji prikazuje detalje recepta
-        Toast.makeText(requireContext(), "Recept: ${recipe.name}", Toast.LENGTH_SHORT).show()
-        // Možete koristiti Bundle za prijenos podataka o receptu u novi fragment za prikaz detalja
-    }*/
 }
 
 
-/*package com.example.kuharica.fragments
-
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.kuharica.R
-import com.example.kuharica.adapters.RecipeAdapter
-import com.example.kuharica.data.RecipeDatabase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-
-class BaseFragment : Fragment() {
-
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var recipeAdapter: RecipeAdapter
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_base, container, false)
-        recyclerView = view.findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-
-        loadRecipes()
-
-        return view
-    }
-
-    private fun loadRecipes() {
-        lifecycleScope.launch(Dispatchers.IO) {
-            val recipes = RecipeDatabase.getInstance(requireContext()).recipeDao().getAllRecipes()
-            withContext(Dispatchers.Main) {
-                recipeAdapter = RecipeAdapter(recipes)
-                recyclerView.adapter = recipeAdapter
-            }
-        }
-    }
-}*/

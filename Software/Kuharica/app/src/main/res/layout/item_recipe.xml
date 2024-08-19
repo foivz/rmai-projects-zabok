@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:gravity="end">>
+    android:gravity="end">
 
     <TextView
         android:id="@+id/tvRecipeName"
@@ -31,18 +31,6 @@
         android:baselineAligned="false"
         android:contentDescription="Delete"
         android:src="@drawable/outline_auto_delete_24" />
-    <!-- <TextView
-         android:id="@+id/tvIngredients"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Sastojci"
-         android:textSize="16sp" />
 
-     <TextView
-         android:id="@+id/tvDescription"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Opis"
-         android:textSize="14sp" />-->
 
 </LinearLayout>

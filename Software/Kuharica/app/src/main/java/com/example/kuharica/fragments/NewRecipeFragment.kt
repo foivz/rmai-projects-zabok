@@ -51,14 +51,14 @@ class NewRecipeFragment : Fragment() {
             val recipe = Recipe(0, recipeName, ingredients, description)
 
             lifecycleScope.launch(Dispatchers.IO) {
-                // Spremi recept u bazu podataka
+
                 RecipeDatabase.getInstance(requireContext()).recipeDao().insertRecipe(recipe)
 
                 withContext(Dispatchers.Main) {
-                    // Ažuriraj UI nakon što je recept spremljen
+
                     btnSave.text = "Spremljeno"
 
-                    // Osvježi stranicu nakon 5 sekundi
+
                     Handler(Looper.getMainLooper()).postDelayed({
                         resetForm()
                     }, 2000)
@@ -72,7 +72,7 @@ class NewRecipeFragment : Fragment() {
         etIngredients.text.clear()
         etDescription.text.clear()
 
-        // Vratite tekst gumba na "Spremi"
+
         btnSave.text = "Spremi"
     }
 }

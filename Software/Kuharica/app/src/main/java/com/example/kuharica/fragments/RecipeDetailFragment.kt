@@ -11,10 +11,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.Fragment
 import com.example.kuharica.R
-import com.example.kuharica.R.id.fragment_container
-import com.example.kuharica.R.id.recyclerView
 import com.example.kuharica.data.Recipe
 
 class RecipeDetailFragment : DialogFragment() {
@@ -38,17 +35,12 @@ class RecipeDetailFragment : DialogFragment() {
         btnClose.setOnClickListener {
             dismiss()
         }
-        // Preuzmite podatke iz Bundle-a
         val recipe = arguments?.getParcelable<Recipe>("recipe")
         recipe?.let {
             tvRecipeName.text = it.name
             tvIngredients.text = createBoldedText("Sastojci:\n\n", it.ingredients)
             tvDescription.text = createBoldedText("Opis postupka:\n\n", it.description)
         }
-       /* btnClose.setOnClickListener {
-            // Vratite se na prethodni fragment
-            parentFragmentManager.popBackStack()
-        }*/
 
         return view
     }

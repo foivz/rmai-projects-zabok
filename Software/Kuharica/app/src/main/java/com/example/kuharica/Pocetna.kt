@@ -5,7 +5,7 @@ import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.view.MotionEvent
-import android.view.inputmethod.InputMethodManager // Dodajte ovaj import
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -15,11 +15,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.example.kuharica.adapters.MainPagerAdapter
-import com.example.kuharica.fragments.BaseFragment
-import com.example.kuharica.fragments.WeekFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.example.kuharica.fragments.NewRecipeFragment
 
 class Pocetna : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +34,10 @@ class Pocetna : AppCompatActivity() {
         val mainPagerAdapter = MainPagerAdapter(supportFragmentManager, lifecycle)
 
 
-        // Povezivanje adaptera s ViewPager2
+
         viewPager2.adapter = mainPagerAdapter
 
-        // Povezivanje TabLayouta s ViewPager2
+
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             tab.setText(mainPagerAdapter.fragmentItems[position].titleRes)
             tab.setIcon(mainPagerAdapter.fragmentItems[position].iconRes)
@@ -52,7 +49,6 @@ class Pocetna : AppCompatActivity() {
 
         val btnLogout = findViewById<Button>(R.id.btnLogout)
         btnLogout.setOnClickListener {
-            // Vraćanje na MainActivity
             val intent = Intent(this@Pocetna, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)

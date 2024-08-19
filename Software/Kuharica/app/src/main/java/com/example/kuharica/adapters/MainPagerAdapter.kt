@@ -15,12 +15,12 @@ class MainPagerAdapter(
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
-    // Define a list of FragmentItem objects to manage fragments and their details
+
     val fragmentItems = mutableListOf(
         FragmentItem(
-            R.string.new_fragment, // Resource ID for the title
-            R.drawable.baseline_post_add_24, // Resource ID for the icon
-            NewRecipeFragment::class.java // Fragment class
+            R.string.new_fragment,
+            R.drawable.baseline_post_add_24,
+            NewRecipeFragment::class.java
         ),
         FragmentItem(
             R.string.base_fragment,
@@ -34,21 +34,21 @@ class MainPagerAdapter(
         )
     )
 
-    // Provides the number of fragments
+
     override fun getItemCount(): Int = fragmentItems.size
 
-    // Creates a new fragment based on the position
+
     override fun createFragment(position: Int): Fragment {
         return fragmentItems[position].fragmentClass.newInstance()
     }
 
-    // Adds a fragment item to the list
+
     fun addFragment(fragmentItem: FragmentItem) {
         fragmentItems.add(fragmentItem)
         notifyDataSetChanged()
     }
 
-    // Data class to hold fragment information
+
     data class FragmentItem(
         val titleRes: Int,
         val iconRes: Int,
