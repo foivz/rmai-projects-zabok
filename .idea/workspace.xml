@@ -4,7 +4,138 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="340f7311-4cf2-4237-a60c-d0579f0cfa70" name="Changes" comment="" />
+    <list default="true" id="340f7311-4cf2-4237-a60c-d0579f0cfa70" name="Changes" comment="EditRecipeFragment uređen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+iVWYo0nob5TtriqQjfz0Pqk+6Y=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/+oe5Xb+mpOWAglE74+RKhc9gbyk=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0YCPx2BXJOPBofNeyVSIGa1fhxk=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1z66xoEYtrZ8p+aUaVhql7xIEQs=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2745rQFF+4KWPDVEzDiVUDK2djw=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3f1e0ArbBI8sZagfTiYkqWmyRuk=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/4xVr5JEk+7ETYu5wvF+6ZvqoJvA=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5Z2qOn2D985F+5PH8cObR6gc6B4=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9LNCgE3T0vIdduR36aaEHtjBKcU=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9huiNndxwpBXgsNUF8PNJXsawoE=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/A+FYMjUFn8FleNlmwK+X61UG+58=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/A0PzonPXqo6Fc0B3WbEt1KhCz3I=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/DRQVaRCZ+c_DGD_Cx2EcbIO0usc=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HD36niWUxQpI01Pa_AUUL+mWpII=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HUzDJxDWveGYTX7HSysRuk8SOC8=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/HbENuKnGFbP5f2+Ghvs5gXK2LiI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/J2LKF97cV277mqojcMsVDxa0DlI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JGwbrCdclyeMdnngSLZIr_1ZXxQ=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/KTQyaXikMen88A0lr3u1S8tlw0I=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/LHfGoDFlA_lw0b2b9h0mWlQNN14=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OSxG6wVzI6MGY165nUoEr5xSA6c=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/P+1EzCBrM5abHK5SNbQSsBqSsVo=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/PdBdXkuc3JX528QwYB059xjJ9mg=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QeTEU8YrPwKBST33swE_usaRuJs=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/R8SpBKx6CVXryCnNXWFl4YrtnD0=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ReWlGcfzYgv4RPzVMBU72EpXjp8=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VhiDl9Y4yczmpXp478g+xoJRIVA=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/W1f6r+_VV6q9pJ6CUflmuYNHET4=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Y0_TmAZprjTi1JSRa3nNk30M1sY=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Y2cu1qCN_FnPTPsPRevOF2IRcOY=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/YZRN8t4Pabl2W0kV7JWLQHemzUc=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZXEjUmtAgFhSPFOt7T7NSgEXl7o=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZYo9mFcA7PyXd0g+0jLHcImHKvM=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Zby8al_ugLe4n6UppSJYrN2Y8Nk=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aY9dZLsBMvZPSz3OanuNo4YwTyI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cfTosqe4Ofo8MfR6VNABNnZ+Acc=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cokxXtyQ2WtQmn1lDT5nLFt7Gw4=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/coneQVbtlfQsxkC0J0JtPH653P8=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fkClKuX6HPqwz9EIdAfNw2cBDx4=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fnvgIaiwYW0yOjEPpw3vFARHRvs=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/gNJzaV1lIB_kQBHcnwIFuOZwNTo=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/gPoyf3B0OKPZfpZJ5qZKGISDoBo=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/hgK0E1FYtDC37iVb1NHz9uUbQAk=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jCNQd_XrpBGWC+Y3GXq1Fp1o2+U=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/kXtFvud2EXRcAfdBboo2Tn8zPcI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/lry6B5e2tUuAdPDG9vDZG+9_czM=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/n6rbemNb9A_QO4uS7ftT5_OE9K8=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rzmqPWR_TfcbmVdvMlZ28xfLeRY=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tkm6W7WZIgNK7E4Y9l_jPk9+D8I=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ujpxcjK6cDWPsLYvNMJozXosbSM=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/wsXS1o6ufU_vpeAOfgXIchXEFNI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Kuharica/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,21 +147,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "NatasaDramac"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NatasaDramac&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/foivz/rmai-projects-zabok.git",
-    "accountId": "51d0c03a-c806-4f14-a47d-422a9fca118d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/foivz/rmai-projects-zabok.git&quot;,
+    &quot;accountId&quot;: &quot;51d0c03a-c806-4f14-a47d-422a9fca118d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kX0rIUqMUyEmrEyy0vqbcRMdKs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +174,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "sprint-finish",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/FOI/AndroidStudioProjects/Kuharica-clone/rmai-projects-zabok/Software/Kuharica/app"
   }
@@ -58,5 +189,9 @@
       <updated>1723414810807</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="EditRecipeFragment uređen" />
+    <option name="LAST_COMMIT_MESSAGE" value="EditRecipeFragment uređen" />
   </component>
 </project>
