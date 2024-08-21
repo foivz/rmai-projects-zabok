@@ -58,7 +58,6 @@ class NewRecipeFragment : Fragment() {
 
                     btnSave.text = "Spremljeno"
 
-
                     Handler(Looper.getMainLooper()).postDelayed({
                         resetForm()
                     }, 2000)

@@ -52,6 +52,11 @@ class BaseFragment : Fragment() {
         return view
     }
 
+    override fun onResume() {
+        super.onResume()
+        loadRecipes()
+    }
+
     private fun setupSearchView() {
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -84,7 +89,7 @@ class BaseFragment : Fragment() {
         }
     }
 
-    private fun loadRecipes() {
+    fun loadRecipes() {
         lifecycleScope.launch(Dispatchers.IO) {
             allRecipes = RecipeDatabase.getInstance(requireContext()).recipeDao().getAllRecipes()
             withContext(Dispatchers.Main) {
