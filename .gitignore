@@ -358,3 +358,21 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+
+
+
+Sofware/Kuharica/*.iml
+Sofware/Kuharica/.gradle
+Sofware/Kuharica/local.properties
+Sofware/Kuharica/.idea/caches
+Sofware/Kuharica/.idea/libraries
+Sofware/Kuharica/.idea/modules.xml
+Sofware/Kuharica/.idea/workspace.xml
+Sofware/Kuharica/.idea/navEditor.xml
+Sofware/Kuharica/.idea/assetWizardSettings.xml
+Sofware/Kuharica/.DS_Store
+Sofware/Kuharica/app/build
+Sofware/Kuharica/captures
+Sofware/Kuharica/.externalNativeBuild
+Sofware/Kuharica/.cxx
+Sofware/Kuharica/local.properties
