@@ -27,8 +27,8 @@ class MainPagerAdapter(
         ),
         FragmentItem(
             R.string.week_fragment,
-            R.drawable.baseline_calendar_today_24,
-            GameFragment::class.java  // Zamijenite WeekFragment s GameFragment
+            R.drawable.baseline_videogame_asset_24,
+            GameFragment::class.java
         )
     )
 
