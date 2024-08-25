@@ -6,15 +6,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.kuharica.fragments.BaseFragment
 import com.example.kuharica.fragments.NewRecipeFragment
-import com.example.kuharica.fragments.WeekFragment
+import com.example.kuharica.fragments.GameFragment  // Import GameFragment
 import com.example.kuharica.R
-
 
 class MainPagerAdapter(
     fragmentManager: FragmentManager,
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
-
 
     val fragmentItems = mutableListOf(
         FragmentItem(
@@ -29,25 +27,21 @@ class MainPagerAdapter(
         ),
         FragmentItem(
             R.string.week_fragment,
-            R.drawable.baseline_calendar_today_24,
-            WeekFragment::class.java
+            R.drawable.baseline_videogame_asset_24,
+            GameFragment::class.java
         )
     )
 
-
     override fun getItemCount(): Int = fragmentItems.size
-
 
     override fun createFragment(position: Int): Fragment {
         return fragmentItems[position].fragmentClass.newInstance()
     }
 
-
     fun addFragment(fragmentItem: FragmentItem) {
         fragmentItems.add(fragmentItem)
         notifyDataSetChanged()
     }
-
 
     data class FragmentItem(
         val titleRes: Int,
