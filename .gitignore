@@ -383,3 +383,4 @@ Sofware/Kuharica/local.properties
 .idea/navEditor.xml
 .idea/assetWizardSettings.xml
 *.iml
+/.idea/deploymentTargetSelector.xml
